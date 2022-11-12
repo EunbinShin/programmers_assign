@@ -1,10 +1,17 @@
 function ContentTitle(props){
-    this.element = document.createElement('div')
-    this.title = document.createElement('h1')
-    this.title.innerText = props.title
-    this.element.appendChild(this.title)
+    /* ContentTitle origin HTML
+    <div class="content_title">
+        <h1> CardView </h1>
+    </div>
+     */
 
-    props.target.appendChild(this.element)
+    this.$element = document.createElement('div')
+    this.$element.className = 'content_title'
+    this.$title = document.createElement('h1')
+    this.$title.innerText = props.title
+    this.$element.appendChild(this.$title)
+
+    props.$target.appendChild(this.$element)
 }
 
 export default ContentTitle
