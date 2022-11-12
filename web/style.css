@@ -13,6 +13,7 @@ header {
     background: #29323C;
     background: linear-gradient(198deg, rgba(2,0,36,1) 0%, rgba(99,116,136,1) 0%, rgba(41,50,60,1) 100%);
     color: white;
+    justify-content: space-between;
 }
 
 .header {
@@ -20,9 +21,11 @@ header {
 }
 
 .header_left {
+    margin-left: 15px;
 }
 
 .header_right {
+    margin-right: 15px;
 }
 
 #page_content {
